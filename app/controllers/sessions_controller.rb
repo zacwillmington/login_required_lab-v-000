@@ -20,6 +20,6 @@ class SessionsController < ApplicationController
       if current_user != nil
           session.delete
       end         
-
+      redirected_to '/sessions/new'
   end
 end
