@@ -11,5 +11,6 @@ class SessionsController < ApplicationController
       if current_user == nil || current_user.empty?
           redirect_to '/sessions/new'
       end
+      redirect_to '/secrets/shows'
   end
 end
