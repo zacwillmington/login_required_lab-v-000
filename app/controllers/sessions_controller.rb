@@ -10,9 +10,6 @@ class SessionsController < ApplicationController
       binding.pry
       if current_user == nil || current_user.empty?
           redirect_to '/sessions/new'
-      else
-          
-          binding.pry
       end
   end
 end
