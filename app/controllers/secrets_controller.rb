@@ -4,10 +4,11 @@ class SecretsController < ApplicationController
 
   def show
       binding.pry
-      if current_user != nil 
+      if current_user != nil
+          
       else
           redirect_to '/sessions/new'
       end
   end
-  
+
 end
