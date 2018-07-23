@@ -4,7 +4,7 @@ class SecretsController < ApplicationController
 
   def show
       if current_user != nil
-          
+
       else
           redirect_to '/sessions/new'
       end
