@@ -14,4 +14,12 @@ class SessionsController < ApplicationController
           redirect_to '/secrets/shows'
       end
   end
+
+  def destroy
+      binding.pry
+      if current_user != nil
+          session.delete
+      end         
+
+  end
 end
