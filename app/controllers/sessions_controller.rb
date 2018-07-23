@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
       binding.pry
       if current_user != nil
           session.delete
-      end         
-      redirected_to '/sessions/new'
+      end
+      redirect_to '/sessions/new'
   end
 end
