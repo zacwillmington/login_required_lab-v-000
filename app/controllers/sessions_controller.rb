@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
   def destroy
       binding.pry
       if current_user != nil
-          session.delete
+          session.delete :name
       end
       redirect_to '/sessions/new'
   end
