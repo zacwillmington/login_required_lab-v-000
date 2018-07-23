@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   helpers do 
 
       def current_user
+          binding.pry
           session[:name] ||= session[:name] = params[:name]
       end
   end
